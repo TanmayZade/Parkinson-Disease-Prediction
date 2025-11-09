@@ -22,7 +22,7 @@ st.set_page_config(layout="wide")
 # Initialize report_filename in session state if not already done
 if 'report_filename' not in st.session_state:
     st.session_state.report_filename = None
-
+gemini_api - "alfsldfsdfjsdlff"
 # Load all models
 spiral_model = load_model('Models/parkinson_disease_detection_model(93%).h5')
 mri_model = load_model('Models/parkinson_disease_detection_model(MRI).h5')
@@ -375,3 +375,4 @@ with col2:
     st.image("https://imgs.search.brave.com/rOLcvpMq7nGNVvvyQJzECrhMhagCMtBXT8NAPHvF7Xo/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aG9tZXdhdGNoY2Fy/ZWdpdmVycy5jb20v/c3ViLzQ2NTUzL2lt/YWdlcy9wYXJrc2lu/c29ucy5wbmc", 
               caption="Parkinson's Signs and Symptoms", 
               use_column_width=True)
+
