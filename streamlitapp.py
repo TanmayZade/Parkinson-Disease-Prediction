@@ -19,6 +19,8 @@ from datetime import datetime
 # Set the page layout to wide to utilize full screen width
 st.set_page_config(layout="wide")
 
+JWT_SECRET = "3434242"
+
 # Initialize report_filename in session state if not already done
 if 'report_filename' not in st.session_state:
     st.session_state.report_filename = None
@@ -193,7 +195,7 @@ def create_report(filename, user_name, final_prediction, final_confidence):
             "Consider joining support groups for shared experiences."
         ]
         
-        advice_bullets = [Paragraph(f'• {item}', styles['Normal']) for item in advice_items]
+        advice_bullets = [Paragraph(f'â¢ {item}', styles['Normal']) for item in advice_items]
         advice_list = ListFlowable(advice_bullets, bulletType='bullet', spaceAfter=10)
         report_elements.append(advice_list)
         report_elements.append(Spacer(1, 12))
